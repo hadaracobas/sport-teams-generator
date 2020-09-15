@@ -1,3 +1,24 @@
+## SPORT TEAMS GENERATOR
+https://sport-teams-generator.web.app/
+
+The purpose of this project: An assignment I received from a company after a job interview.
+
+Instructions I received:
+Build a web app that aims at generating sports teams.
+* The user should enter how many total participating players there are
+* The user should enter how many groups he wants to generate
+* The user should enter how many players each team should have
+
+
+Few points about this project:
+* Technology: React js
+* State: hooks
+* Design: Material UI
+* Deployed: firebase
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
