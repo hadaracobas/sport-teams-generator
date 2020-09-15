@@ -1,0 +1,28 @@
+/* GENERAL */
+
+.form-control {
+  margin-top: 60px !important;
+}
+
+.step-title {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.step-container {
+  margin: 0 auto !important;
+}
+
+.error-title {
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 12px;
+}
+
+.error-subtitle {
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24px;
+}
+
+.spacer {
+  margin: 7px 0;
+}
+/* STEP 1 STYLES */

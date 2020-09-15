@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +7,66 @@
 
 .app {
   text-align: center;
+  font-family: "Grandstander", cursive;
 }
 
 .app__title {
-  margin-bottom: 30px;
-  margin-top: 20px;
+  text-transform: uppercase;
+  color: white;
 }
 
 .app__form {
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray;*/
   margin-top: 120px;
   margin: 120px auto 0;
-  padding: 30px;
+  padding: 5px;
   width: 70%;
+}
+
+.app__header {
+  background-color: #f50057;
+  min-height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.app__header h5 {
+  color: white;
+}
+
+.app__main {
+  margin-top: 150px;
+  /*border: 1px solid lightgrey;*/
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.MuiButton-contained {
+  margin: 0 5px !important;
+}
+
+@media (min-width: 760px) {
+  .app__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .app__header h5 {
+    margin-right: 25px;
+  }
+
+  .app__title {
+    margin-left: 25px;
+  }
 }
