@@ -4,10 +4,6 @@ import { FormControl, Input, Button } from "@material-ui/core";
 import WarningIcon from "@material-ui/icons/Warning";
 
 function FormStep4(props) {
-  const reloadPage = () => {
-    window.location.reload();
-  };
-
   if (props.currentStepForm !== 4) {
     return null;
   } else if (
@@ -26,7 +22,7 @@ function FormStep4(props) {
           players to create the number of teams you want. Click the button reser
           to reset the app, or prev to return one step back.
         </h5>
-        <Button variant="contained" onClick={reloadPage}>
+        <Button variant="contained" onClick={props.resetApp}>
           Reset
         </Button>
       </div>

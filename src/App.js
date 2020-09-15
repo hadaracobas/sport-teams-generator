@@ -8,6 +8,7 @@ import FormStep3 from "./formStepsComponents/Step3";
 import FormStep4 from "./formStepsComponents/Step4";
 import DisplayResults from "./formStepsComponents/DisplayResults";
 import { shuffleArray, chunk, sliceArrFunc } from "./util";
+import SportsBasketballRoundedIcon from "@material-ui/icons/SportsBasketballRounded";
 
 function App() {
   const [currentFormStep, setCurrentFormStep] = useState(1); // current step form
@@ -126,11 +127,22 @@ function App() {
     _next();
   };
 
+  const resetApp = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="app">
       <header className="app__header">
-        <h3 className="app__title">sport teams generator</h3>
-        <h5>step {currentFormStep}</h5>
+        <h3 className="app__title">
+          sport teams generator <SportsBasketballRoundedIcon />
+        </h3>
+
+        {currentFormStep != 5 ? (
+          <h5>step {currentFormStep}</h5>
+        ) : (
+          <h5>Display Teams Result</h5>
+        )}
       </header>
 
       <main className="app__main">
@@ -161,12 +173,14 @@ function App() {
             }
             totalPlayers={formInfo.totalNumOfPlayers}
             onClick={handleClickGenerateTeams}
+            resetApp={resetApp}
           />
         </form>
         <DisplayResults
           arrOfTeamsPlayThisRound={teamsPlayThisRound}
           currentStepForm={currentFormStep}
           playersNotPlayThisRound={PlayersNotPlayThisRound}
+          resetApp={resetApp}
         />
       </main>
 

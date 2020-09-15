@@ -1,7 +1,7 @@
 /* GENERAL */
 
 .form-control {
-  margin-top: 60px !important;
+  margin-top: 40px !important;
 }
 
 .step-title {
@@ -25,4 +25,31 @@
 .spacer {
   margin: 7px 0;
 }
-/* STEP 1 STYLES */
+
+.teams-container {
+  /* border: 1px solid red;*/
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+.team-container {
+  border: 1px solid lightgrey;
+  /*max-width: 30%;*/
+  width: 25%;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.team-container h5 {
+  background-color: lightgrey;
+  margin-bottom: 5px;
+}
+
+.playersNotPlay-text {
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 10px;
+  font-size: 15px;
+}
